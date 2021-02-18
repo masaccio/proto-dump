@@ -18,6 +18,7 @@ mkdir "$EPD_PRODUCT_DIR"
 ###
 rm -rf protobuf_$EPD_PROTOBUF_VERSION
 tar -xzf packages/protobuf-$EPD_PROTOBUF_VERSION.tar.gz
+patch -d protobuf-2.5.0 -p1  < arm64.patch
 
 ###
 # Build Protobuf
