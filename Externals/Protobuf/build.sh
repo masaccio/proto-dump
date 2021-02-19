@@ -80,9 +80,9 @@ mkdir -p prebuilt/bin prebuilt/lib prebuilt/include
 cp platform/x86_64/bin/protoc prebuilt/bin || fatal_error
 cp -r platform/x86_64/lib/* prebuilt/lib || fatal_error
 cp -r platform/universal/* prebuilt/lib || fatal_error
-cp -r protobuf/include prebuilt/include || fatal_error
+cp -r include prebuilt/include || fatal_error
 
-rm -rf platform protobuf-2.5.0
+rm -rf platform protobuf-2.5.0 include
 
 file prebuilt/lib/libprotobuf.a >&3
 
