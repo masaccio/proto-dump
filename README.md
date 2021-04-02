@@ -1,4 +1,5 @@
-## proto-dump
+proto-dump
+================
 
 proto-dump is a tool for recovering [Protobuf](https://code.google.com/p/protobuf/) descriptors (.proto files) from compiled programs. It can be thought of as [class-dump](http://stevenygard.com/projects/class-dump) for Protobuf.
 
