@@ -9,6 +9,7 @@ Updates
 
 This fork has had the following small updates since being forked from [Sean Patrick O'Brien's](http://www.obriensp.com)
 version at https://github.com/obriensp/proto-dump:
+
     * included a version of Google Protobuf 2.5.0
 	* added patches to build the Google Protobuf and Command Line Utilities dependencies on recent macOS including Apple Silicon
 
