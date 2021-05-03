@@ -10,13 +10,13 @@
 #import <google/protobuf/io/coded_stream.h>
 #import <google/protobuf/wire_format.h>
 
-using namespace google::protobuf::internal;
+using namespace google_public::protobuf::internal;
 
 
 @implementation PDProtobufInputStream
 {
 	NSData *_data;
-	google::protobuf::io::CodedInputStream *_stream;
+	google_public::protobuf::io::CodedInputStream *_stream;
 }
 
 - (instancetype)initWithData:(NSData *)data
@@ -27,7 +27,7 @@ using namespace google::protobuf::internal;
 	}
 	
 	_data = data;
-	_stream = new google::protobuf::io::CodedInputStream((const uint8_t *)_data.bytes, (int)_data.length);
+	_stream = new google_public::protobuf::io::CodedInputStream((const uint8_t *)_data.bytes, (int)_data.length);
 	
 	return self;
 }
