@@ -3,3 +3,5 @@ build.log
 proto-dump.xcodeproj/project.xcworkspace/xcshareddata
 proto-dump.xcodeproj/project.xcworkspace/xcuserdata
 proto-dump.xcodeproj/xcuserdata
+Externals/Protobuf/prebuilt/lib/pkgconfig/
+Externals/Protobuf/protobuf/
