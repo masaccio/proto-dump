@@ -1,0 +1,26 @@
+From b53d00e42cdc4a4b57e31d58244cb46b3b05bd6a Mon Sep 17 00:00:00 2001
+From: Stanislav Ochotnicky <sochotnicky@redhat.com>
+Date: Thu, 16 May 2013 12:01:10 +0200
+Subject: [PATCH] Add generic gcc header to Makefile.am
+
+This way it will get included properly during installation and
+distribution generation
+---
+ src/Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/Makefile.am b/src/Makefile.am
+index 4069603..2458ceb 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -42,6 +42,7 @@ nobase_include_HEADERS =                                        \
+   google/protobuf/stubs/atomicops_internals_arm_gcc.h           \
+   google/protobuf/stubs/atomicops_internals_arm_qnx.h           \
+   google/protobuf/stubs/atomicops_internals_atomicword_compat.h \
++  google/protobuf/stubs/atomicops_internals_generic_gcc.h       \
+   google/protobuf/stubs/atomicops_internals_macosx.h            \
+   google/protobuf/stubs/atomicops_internals_mips_gcc.h          \
+   google/protobuf/stubs/atomicops_internals_pnacl.h             \
+-- 
+1.8.1.4
+
