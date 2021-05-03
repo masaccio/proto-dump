@@ -62,7 +62,7 @@
 
 #include <google/protobuf/stubs/template_util.h>  // For true_type and false_type
 
-namespace google {
+namespace google_public {
 namespace protobuf {
 namespace internal {
 

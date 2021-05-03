@@ -61,7 +61,7 @@
 //
 //     // implements MyService ---------------------------------------
 //
-//     void Foo(google::protobuf::RpcController* controller,
+//     void Foo(google_public::protobuf::RpcController* controller,
 //              const MyRequest* request,
 //              MyResponse* response,
 //              Closure* done) {
@@ -103,7 +103,7 @@
 #include <string>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace google_public {
 namespace protobuf {
 
 // Defined in this file.

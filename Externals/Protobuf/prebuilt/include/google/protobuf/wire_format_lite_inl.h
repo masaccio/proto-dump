@@ -44,7 +44,7 @@
 #include <google/protobuf/io/coded_stream.h>
 
 
-namespace google {
+namespace google_public {
 namespace protobuf {
 namespace internal {
 

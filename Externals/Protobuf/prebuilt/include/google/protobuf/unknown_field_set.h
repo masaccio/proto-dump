@@ -44,7 +44,7 @@
 #include <google/protobuf/stubs/common.h>
 // TODO(jasonh): some people seem to rely on protobufs to include this for them!
 
-namespace google {
+namespace google_public {
 namespace protobuf {
   namespace io {
     class CodedInputStream;         // coded_stream.h

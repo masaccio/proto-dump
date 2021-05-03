@@ -41,7 +41,7 @@
 #include <map>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace google_public {
 namespace protobuf {
 namespace io {
 
