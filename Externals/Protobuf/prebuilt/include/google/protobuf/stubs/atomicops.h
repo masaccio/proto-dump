@@ -58,7 +58,7 @@
 
 #include <google/protobuf/stubs/platform_macros.h>
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 namespace internal {
 
@@ -185,7 +185,7 @@ GOOGLE_PROTOBUF_ATOMICOPS_ERROR
 #elif defined(__pnacl__)
 #include <google/protobuf/stubs/atomicops_internals_pnacl.h>
 #else
-#include <google/protobuf/stubs/atomicops_internals_generic_gcc.h>
+GOOGLE_PROTOBUF_ATOMICOPS_ERROR
 #endif
 
 // Unknown.

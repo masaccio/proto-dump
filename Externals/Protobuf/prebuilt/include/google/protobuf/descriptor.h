@@ -63,7 +63,7 @@
 #undef TYPE_BOOL
 #endif  // TYPE_BOOL
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 
 // Defined in this file.

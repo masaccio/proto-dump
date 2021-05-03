@@ -41,7 +41,7 @@
 #include <vector>
 #include <google/protobuf/stubs/common.h>
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 namespace io {
 

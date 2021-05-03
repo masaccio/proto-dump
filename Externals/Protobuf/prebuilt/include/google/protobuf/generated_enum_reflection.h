@@ -41,7 +41,7 @@
 
 #include <string>
 
-namespace google_public {
+namespace google {
 namespace protobuf {
   class EnumDescriptor;
 }  // namespace protobuf

@@ -14,7 +14,7 @@
 
 @implementation PDProtoFile
 {
-	google_public::protobuf::FileDescriptorProto _fileDescriptorProto;
+	google::protobuf::FileDescriptorProto _fileDescriptorProto;
 }
 
 - (instancetype)initWithCompiledData:(NSData *)data
@@ -47,13 +47,13 @@
 
 - (BOOL)generateSource
 {
-	static google_public::protobuf::DescriptorPool pool;
+	static google::protobuf::DescriptorPool pool;
 	
 	if (_source != nil) {
 		return YES;
 	}
 		
-	const google_public::protobuf::FileDescriptor *descriptor = pool.BuildFile(_fileDescriptorProto);
+	const google::protobuf::FileDescriptor *descriptor = pool.BuildFile(_fileDescriptorProto);
 	if (descriptor == NULL) {
 		return NO;
 	}

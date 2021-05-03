@@ -51,7 +51,7 @@
 #define GOOGLE_PROTOBUF_UTF8_VALIDATION_ENABLED
 #endif
 
-namespace google_public {
+namespace google {
 namespace protobuf {
   namespace io {
     class CodedInputStream;      // coded_stream.h

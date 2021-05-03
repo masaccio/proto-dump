@@ -48,7 +48,7 @@
 #include <google/protobuf/unknown_field_set.h>
 
 
-namespace google_public {
+namespace google {
 namespace upb {
 namespace google_opensource {
 class GMR_Handlers;

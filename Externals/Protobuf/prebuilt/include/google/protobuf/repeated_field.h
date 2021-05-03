@@ -54,7 +54,7 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/message_lite.h>
 
-namespace google_public {
+namespace google {
 
 namespace upb {
 namespace google_opensource {
@@ -383,7 +383,7 @@ class LIBPROTOBUF_EXPORT StringTypeHandlerBase {
   static void Clear(string* value) { value->clear(); }
   static void Merge(const string& from, string* to) { *to = from; }
   static const Type& default_instance() {
-    return ::google_public::protobuf::internal::kEmptyString;
+    return ::google::protobuf::internal::kEmptyString;
   }
 };
 
@@ -750,7 +750,7 @@ void RepeatedField<Element>::Reserve(int new_size) {
   if (total_size_ >= new_size) return;
 
   Element* old_elements = elements_;
-  total_size_ = max(google_public::protobuf::internal::kMinRepeatedFieldAllocationSize,
+  total_size_ = max(google::protobuf::internal::kMinRepeatedFieldAllocationSize,
                     max(total_size_ * 2, new_size));
   elements_ = new Element[total_size_];
   if (old_elements != NULL) {
@@ -1389,7 +1389,7 @@ RepeatedPtrField<Element>::pointer_end() const {
 // for RepeatedField and RepatedPtrField. Typical usage would be:
 //
 //   std::copy(some_sequence.begin(), some_sequence.end(),
-//             google_public::protobuf::RepeatedFieldBackInserter(proto.mutable_sequence()));
+//             google::protobuf::RepeatedFieldBackInserter(proto.mutable_sequence()));
 //
 // Ported by johannes from util/gtl/proto-array-iterators.h
 

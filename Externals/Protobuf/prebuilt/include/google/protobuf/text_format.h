@@ -45,7 +45,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/descriptor.h>
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 
 namespace io {

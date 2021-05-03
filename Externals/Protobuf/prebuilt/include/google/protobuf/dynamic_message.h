@@ -41,7 +41,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/stubs/common.h>
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 
 // Defined in other files.

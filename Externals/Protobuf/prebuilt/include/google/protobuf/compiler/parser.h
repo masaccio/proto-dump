@@ -46,7 +46,7 @@
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/io/tokenizer.h>
 
-namespace google_public {
+namespace google {
 namespace protobuf { class Message; }
 
 namespace protobuf {

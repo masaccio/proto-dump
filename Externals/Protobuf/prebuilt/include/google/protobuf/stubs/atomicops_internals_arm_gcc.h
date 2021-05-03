@@ -35,7 +35,7 @@
 #ifndef GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_ARM_GCC_H_
 #define GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_ARM_GCC_H_
 
-namespace google_public {
+namespace google {
 namespace protobuf {
 namespace internal {
 

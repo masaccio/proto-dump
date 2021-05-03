@@ -46,7 +46,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google_public {
+namespace google {
 
 namespace protobuf {
   class Descriptor;                                    // descriptor.h
@@ -872,78 +872,78 @@ class ExtensionIdentifier {
 #define GOOGLE_PROTOBUF_EXTENSION_ACCESSORS(CLASSNAME)                        \
   /* Has, Size, Clear */                                                      \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline bool HasExtension(                                                   \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) const {   \
     return _extensions_.Has(id.number());                                     \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline void ClearExtension(                                                 \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) {         \
     _extensions_.ClearExtension(id.number());                                 \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline int ExtensionSize(                                                   \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) const {   \
     return _extensions_.ExtensionSize(id.number());                           \
   }                                                                           \
                                                                               \
   /* Singular accessors */                                                    \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::ConstType GetExtension(                  \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) const {   \
     return _proto_TypeTraits::Get(id.number(), _extensions_,                  \
                                   id.default_value());                        \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::MutableType MutableExtension(            \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) {         \
     return _proto_TypeTraits::Mutable(id.number(), _field_type,               \
                                       &_extensions_);                         \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline void SetExtension(                                                   \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       typename _proto_TypeTraits::ConstType value) {                          \
     _proto_TypeTraits::Set(id.number(), _field_type, value, &_extensions_);   \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline void SetAllocatedExtension(                                          \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       typename _proto_TypeTraits::MutableType value) {                        \
     _proto_TypeTraits::SetAllocated(id.number(), _field_type,                 \
                                     value, &_extensions_);                    \
   }                                                                           \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::MutableType ReleaseExtension(            \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) {         \
     return _proto_TypeTraits::Release(id.number(), _field_type,               \
                                       &_extensions_);                         \
@@ -951,49 +951,49 @@ class ExtensionIdentifier {
                                                                               \
   /* Repeated accessors */                                                    \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::ConstType GetExtension(                  \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       int index) const {                                                      \
     return _proto_TypeTraits::Get(id.number(), _extensions_, index);          \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::MutableType MutableExtension(            \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       int index) {                                                            \
     return _proto_TypeTraits::Mutable(id.number(), index, &_extensions_);     \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline void SetExtension(                                                   \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       int index, typename _proto_TypeTraits::ConstType value) {               \
     _proto_TypeTraits::Set(id.number(), index, value, &_extensions_);         \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline typename _proto_TypeTraits::MutableType AddExtension(                \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id) {         \
     return _proto_TypeTraits::Add(id.number(), _field_type, &_extensions_);   \
   }                                                                           \
                                                                               \
   template <typename _proto_TypeTraits,                                       \
-            ::google_public::protobuf::internal::FieldType _field_type,                        \
+            ::google::protobuf::internal::FieldType _field_type,                        \
             bool _is_packed>                                                  \
   inline void AddExtension(                                                   \
-      const ::google_public::protobuf::internal::ExtensionIdentifier<                          \
+      const ::google::protobuf::internal::ExtensionIdentifier<                          \
         CLASSNAME, _proto_TypeTraits, _field_type, _is_packed>& id,           \
       typename _proto_TypeTraits::ConstType value) {                          \
     _proto_TypeTraits::Add(id.number(), _field_type, _is_packed,              \
